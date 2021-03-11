@@ -21,7 +21,7 @@
 		$mail->IsHTML(true);
 		$mail->Username = $system_email;
 		$mail->Password = $system_password;
-		$mail->SetFrom("muhammadfarhanmadani248@gmail.com", "Flooders | SIJA - SMKN 1 Cimahi");
+		$mail->SetFrom("");
 		$mail->Subject = "Flooders | Peringatan Siaga Banjir";
 		$mail->Body = "<h2>Flooders :)</h2><p>Sampurasun sadayana ! Punten bade ngawartosan. <br> Di daerah ".$lokasi." terjadi perubahan ketinggian air. Dengan data sebagai berikut : <br><ul><li>Status : ".$status."</li><li>Jarak : ".$ketinggian."</li></ul><br><br>Waspada kepada warga yang tinggal di daerah ".$lokasi." dan pengendara yang ingin melintas. <br><br> <marquee><h1 style='color:red;'>STAY ALERT PEOPLE !!!</h1></marquee></p>";
 		$mail->AddAddress($subcriber['email']);
